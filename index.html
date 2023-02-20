@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Registration Form</h1>
+            <p>Please fill out this form with the required information</p>
+        </header>
+        <form>
+            <div class="first">
+                <label for="fname">Enter Your First Name:</label>
+                <br>
+                <input type="text" id="fname" name="fname" required>
+                <br>
+                <label for="lname">Enter Your Last Name:</label>
+                <br>
+                <input type="text" id="lname" name="lname" required>
+                <br>
+                <label for="email">Enter Your Email:</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="pass">Create a New Password:</label>
+                <br>
+                <input type="password" id="pass" name="pass" required>
+            </div>
+            <div class="chec">
+                <input type="radio" id="Personal" name="check" value="Personal Account">
+                <label for="Personal">Personal Account</label><br>
+                <input type="radio" id="Business" name="check" value="Business Account">
+                <label for="Business">Business Account</label><br>
+                <input type="checkbox" id="accept" value="I accept the terms and conditions" required>
+                <label for="accept"> I accept the <a href=".//index.html">terms and conditions</a></label>
+            </div>
+            <div class="last">
+                <label for="file">Upload a profile picture:</label>
+                <input type="file" name="file" id="file">
+                <label for="year">Input your age (years):</label>
+                <br>
+                <input type="number" name="" id="year" min="13">
+                <br>
+                <label for="choose">How did you hear about us?</label>
+                <br>
+                <select id="choose">
+                    <option value="">(select one)</option>
+                    <option value="freeCodeCamp News">freeCodeCamp News</option>
+                    <option value="freeCodeCamp YouTube Channel">freeCodeCamp YouTube Channel</option>
+                    <option value="freeCodeCamp Forum">freeCodeCamp Forum</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br>
+                <label for="message">Provide a bio:</label>
+                <br>
+                <textarea name="message" placeholder="I like coding on the beach..."></textarea>
+            </div>
+            <div class="div-submit">
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>
